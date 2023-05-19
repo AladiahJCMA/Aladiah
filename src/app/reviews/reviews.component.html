@@ -1,0 +1,17 @@
+<div class="banner"></div>
+
+<div id="list-of-previews">
+
+    <div *ngFor="let review of reviews" class="review-preview">
+
+        <div class="img-div">
+            <img src="../assets/media/{{review.imgFolder}}/main.png" alt="">
+        </div>
+
+        <div class="review-name-and-link">
+            <p>{{ review.name }}</p>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+#list-of-previews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.review-preview {
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.review-preview > .img-div {
+    display: flex;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+}
+
+.img-div > img {
+    width: 100%;
+}
+
+.review-name-and-link {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+}
+
+.review-name-and-link > p {
+    margin: 4vh 2vw 0vw 2vh;
+    text-align: center;
+}

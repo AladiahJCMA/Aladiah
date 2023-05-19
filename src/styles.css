@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  grid-template-rows: 5% 95%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+  width: 100%;
+  position: static;
+  background-color: green;
+  overflow: hidden;
+  color: transparent;
+  z-index: 10;
+  transition: width 0.3s;
+}
+
+.div1:hover {
+  width: 300%;
+  color: black;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 2;
+  background-color: blue;
+  position: static;
+}
+
+.div3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: cadetblue;
+  width: 100%;
+  overflow: auto;
+  height: auto;
+  position: static;
+}
